@@ -2,10 +2,10 @@
 
 html {
   font-size: 100%;
-  -webkit-text-size-adjust: none;
-  /* Prevent font scaling in landscape */
+  -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: relative;
-  min-height: 100%;
 }
 
 body {
@@ -16,10 +16,20 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  min-height: 100vh;
 }
 
 a, button {
   @include hover-focus-active {
     outline: none;
   }
+}
+
+.wrapper {
+  flex-grow: 1;
 }

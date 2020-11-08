@@ -1,1 +1,122 @@
 /* Hero */
+
+.hero {
+  background-color: $hero-bg;
+  @include vpad(30);
+}
+
+.hero-content {
+  @include hpad(15);
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
+
+  span {
+    font-size: 62.5%;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $white;
+  margin-top: 24px;
+}
+
+.btn-download {
+  background-color: $white;
+  color: $red;
+  font-weight: bold;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+
+  @include hover-focus-active {
+    background-color: $white;
+    color: darken($red, 5%);
+    box-shadow: $shadow-hover;
+  }
+}
+
+.book-mockup {
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .hero {
+    @include vpad(50);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    margin-top: 28px;
+  }
+
+  .book-mockup {
+    height: 400px;
+  }
+
+}
+
+
+@include media-breakpoint-up(xl) {
+
+  .hero {
+    @include vpad(100);
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: $white;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    margin-top: 32px;
+  }
+
+  .book-mockup {
+    height: 500px;
+    margin-bottom: -65px;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+
+@include media-breakpoint-down(sm) {
+
+  .btn-download {
+    font-size: 1.125rem;
+  }
+
+}
