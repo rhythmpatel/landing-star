@@ -1,0 +1,10 @@
+# Editor
+.idea
+
+# Node
+/node_modules
+/package-lock.json
+
+# Map files
+css/*.css.map
+js/*.js.map
