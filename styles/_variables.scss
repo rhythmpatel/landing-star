@@ -41,12 +41,28 @@ $base-font-size:    16px;
 
 
 /* Bootstrap overrides */
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1500px
+) !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1440px
+) !default;
 
 $navbar-light-brand-color: $primary;
 $navbar-light-brand-hover-color: $primary;
 
 $btn-padding-y-lg:      1.25rem !default;
 $btn-padding-x-lg:      2rem !default;
-$btn-font-size-lg:      1.5rem;
+$btn-font-size-lg:      1.25rem;
 $btn-border-radius-lg:  2.5rem;
 //$input-btn-line-height-lg:    $line-height-lg !default;

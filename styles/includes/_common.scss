@@ -33,3 +33,60 @@ a, button {
 .wrapper {
   flex-grow: 1;
 }
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 40px;
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+}
+
+
+@include media-breakpoint-up(xl) {
+
+  .section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .heading {
+    font-size: 2.75rem;
+    margin-bottom: 60px;
+  }
+
+}
+
+
+@include media-breakpoint-up(xxl) {
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 70px;
+  }
+
+}

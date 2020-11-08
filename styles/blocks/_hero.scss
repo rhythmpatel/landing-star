@@ -113,6 +113,15 @@
 }
 
 
+@include media-breakpoint-up(xxl) {
+
+  .book-mockup {
+    height: 600px;
+  }
+
+}
+
+
 @include media-breakpoint-down(sm) {
 
   .btn-download {
