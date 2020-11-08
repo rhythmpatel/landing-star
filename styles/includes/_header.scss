@@ -1,1 +1,23 @@
 /* Header */
+
+.top-nav {
+  box-shadow: $shadow;
+  @include vpad(10);
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+
+@include media-breakpoint-up(xl){
+
+  .top-nav {
+    @include vpad(20);
+
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+  }
+
+}

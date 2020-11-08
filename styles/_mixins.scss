@@ -1,0 +1,22 @@
+// padding mixins
+@mixin hpad($pad) {
+  padding-left: $pad + px;
+  padding-right: $pad + px;
+}
+
+@mixin vpad($pad) {
+  padding-top: $pad + px;
+  padding-bottom: $pad + px;
+}
+
+
+// margin mixins
+@mixin hmar($mar) {
+  margin-left: $mar + px;
+  margin-right: $mar + px;
+}
+
+@mixin vmar($mar) {
+  margin-top: $mar + px;
+  margin-bottom: $mar + px;
+}

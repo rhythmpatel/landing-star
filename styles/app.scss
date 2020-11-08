@@ -12,9 +12,10 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Custom
-
+@import "custom/bootstrap-custom";
 
 // Includes
+@import "includes/common";
 @import "includes/header";
 @import "includes/footer";
 

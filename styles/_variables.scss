@@ -1,7 +1,45 @@
 // Colors
+$primary:       #5C5CC3;
+$primary-dark:  #1C1C53;
+$primary-bg:    #F4F4FE;
+$grey:          #444;
+$grey-light:    #CCC;
+$grey-bg:       #F5F5F5;
+$red:           #E76F51;
+$black:         #000;
+$white:         #fff;
 
+$shadow:        0 3px 8px rgba($black,.1);
 
+$hero-bg:       #8F8FF0;
+$footer-bg:     $grey-bg;
+
+$brand-facebook:    #3b5998;
+$brand-twitter:     #1da1f2;
+$brand-instagram:   #E1306C;
+$brand-website:     $primary;
+$brand-github:      #6E5494;
+$brand-linkedin:    #006097;
+$brand-pinterest:   #bd081c;
+
+// Social colors
+$social-colors: () !default;
+$social-colors: map-merge((
+    "facebook":     $brand-facebook,
+    "twitter":      $brand-twitter,
+    "instagram":    $brand-instagram,
+    "website":      $brand-website,
+    "github":     $brand-github,
+    "linkedin":     $brand-linkedin,
+    "pinterest":    $brand-pinterest,
+), $social-colors);
 
 // Typography
 $base-font-family: 'Poppins', sans-serif;
 $base-font-size:    16px;
+
+
+/* Bootstrap overrides */
+
+$navbar-light-brand-color: $primary;
+$navbar-light-brand-hover-color: $primary;
