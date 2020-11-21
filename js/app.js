@@ -14,7 +14,13 @@ try {
 } catch (e) {} // DOM ready
 
 
-$(function () {});
+$(function () {
+  $('.view-chapters').on('click', function (e) {
+    e.preventDefault();
+    $('.chapters').addClass('expand');
+    $(this).hide();
+  });
+});
 
 /***/ }),
 

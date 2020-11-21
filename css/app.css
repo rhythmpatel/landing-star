@@ -12178,6 +12178,27 @@ button:active {
 
 .chapters {
   list-style: none;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chapters::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.chapters.expand {
+  max-height: none;
+}
+
+.chapters.expand::after {
+  height: 2px;
 }
 
 .chapter {
@@ -12211,7 +12232,31 @@ button:active {
   font-weight: bold;
 }
 
+.chapter-details p:last-child {
+  margin-bottom: 0;
+}
+
+.view-chapters {
+  font-size: 1.125rem;
+  color: #CCC;
+  transition: color 0.3s;
+}
+
+.view-chapters:hover,
+.view-chapters:focus {
+  text-decoration: none;
+  color: #5C5CC3;
+}
+
 @media (min-width: 768px) {
+  .chapters {
+    max-height: 550px;
+  }
+
+  .chapters::after {
+    height: 120px;
+  }
+
   .chapter-no {
     font-size: 1.25rem;
     line-height: 64px;
@@ -12225,9 +12270,27 @@ button:active {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
   }
+
+  .toc {
+    font-size: 4rem;
+    color: #F4F4FE;
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    position: absolute;
+    left: 50%;
+    transform: rotate(180deg) translateX(50%);
+  }
 }
 
 @media (min-width: 1200px) {
+  .chapters {
+    max-height: 885px;
+  }
+
+  .chapters::after {
+    height: 150px;
+  }
+
   .chapter {
     margin-bottom: 30px;
   }
@@ -12248,6 +12311,14 @@ button:active {
   .chapter-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  .view-chapters {
+    font-size: 1.25rem;
+  }
+
+  .toc {
+    font-size: 6.25rem;
   }
 }
 
