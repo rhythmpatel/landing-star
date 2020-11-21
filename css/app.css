@@ -12336,6 +12336,27 @@ button:active {
 
 /* Call to action */
 
+.cta {
+  background-color: #E76F51;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .cta-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+}
+
 /* Testimonials */
 
 /* Author */

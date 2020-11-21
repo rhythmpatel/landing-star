@@ -1,1 +1,28 @@
 /* Call to action */
+
+.cta {
+  background-color: $red;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  color: $white;
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+}
