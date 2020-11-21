@@ -41,8 +41,7 @@
 
   p {
     font-size: 1rem;
-    font-weight: 500;
-    color: $grey-dark;
+    color: $grey;
 
     &:last-child {
       margin-bottom: 0;
@@ -61,12 +60,14 @@
 
 .testimonial-user-name {
   font-size: 1.125rem;
+  font-weight: 500;
   color: $primary;
   margin-bottom: 0;
 }
 
 .testimonial-designation {
   font-size: 1rem;
+  font-weight: 500;
   color: $grey-dark;
 }
 

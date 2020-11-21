@@ -1,1 +1,54 @@
 /* FAQs */
+
+.faq {
+  & + & {
+    margin-top: 20px;
+  }
+
+  &.card {
+    border: none;
+  }
+
+  .card-header {
+    border-bottom: none;
+    @include vpad(15);
+
+    &:not(.collapsed) {
+      .faq-question {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  transition: color .3s;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  padding-right: 40px;
+  padding-top: 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .faq {
+    & + & {
+      margin-top: 24px;
+    }
+
+    .card-header {
+      @include vpad(20);
+    }
+  }
+
+}
