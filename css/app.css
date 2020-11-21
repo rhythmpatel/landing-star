@@ -12726,6 +12726,52 @@ button:active {
 
 /* Author */
 
+.author-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+.author-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.author-bio {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.author-bio p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .author-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    border: 5px solid #fff;
+  }
+
+  .author-bio {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .author-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /* FAQs */
 
 /* Contact */
