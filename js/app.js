@@ -11,14 +11,33 @@ try {
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+
+  __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 } catch (e) {} // DOM ready
 
 
 $(function () {
+  // view all chapters
   $('.view-chapters').on('click', function (e) {
     e.preventDefault();
     $('.chapters').addClass('expand');
     $(this).hide();
+  }); // testimonial slider
+
+  $('.testimonials').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }]
   });
 });
 
