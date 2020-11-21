@@ -11960,6 +11960,10 @@ button:active {
   padding-bottom: 50px;
 }
 
+.section-light {
+  background-color: #F4F4FE;
+}
+
 .heading {
   font-size: 2rem;
   font-weight: bold;
@@ -12320,6 +12324,14 @@ button:active {
   .toc {
     font-size: 6.25rem;
   }
+}
+
+/* Video Intro */
+
+.video-container {
+  max-width: 960px;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 /* Call to action */
