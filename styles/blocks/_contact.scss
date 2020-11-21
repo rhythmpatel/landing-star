@@ -1,1 +1,46 @@
 /* Contact */
+
+.contact-form {
+  margin-top: 30px;
+
+  .form-control {
+    font-size: 1.125rem;
+  }
+}
+
+.contact-text {
+  font-size: 1.125rem;
+}
+
+.btn-contact {
+  border: none;
+  background-color: $primary-bg;
+  color: $primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: $shadow;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+
+  @include hover-focus-active {
+    background-color: $primary;
+    color: $white;
+    box-shadow: $shadow-hover;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .contact-form {
+    margin-top: 40px;
+
+    .form-control {
+      font-size: 1.25rem;
+    }
+  }
+
+  .btn-contact {
+    @include hpad(75);
+  }
+
+}

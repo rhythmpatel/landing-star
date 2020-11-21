@@ -2380,16 +2380,16 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 2rem + 4px);
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2459,23 +2459,23 @@ select.form-control:focus::-ms-value {
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(1rem + 2px);
+  padding-bottom: calc(1rem + 2px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
 }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem + 1px);
-  padding-bottom: calc(0.5rem + 1px);
+  padding-top: calc(0.5rem + 2px);
+  padding-bottom: calc(0.5rem + 2px);
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
-  padding-top: calc(0.25rem + 1px);
-  padding-bottom: calc(0.25rem + 1px);
+  padding-top: calc(0.25rem + 2px);
+  padding-bottom: calc(0.25rem + 2px);
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -2483,14 +2483,14 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding: 0.375rem 0;
+  padding: 1rem 0;
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
   color: #212529;
   background-color: transparent;
   border: solid transparent;
-  border-width: 1px 0;
+  border-width: 2px 0;
 }
 
 .form-control-plaintext.form-control-sm,
@@ -2500,7 +2500,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2508,7 +2508,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2525,7 +2525,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
 }
 
 .form-text {
@@ -2615,11 +2615,11 @@ textarea.form-control {
 .was-validated .form-control:valid,
 .form-control.is-valid {
   border-color: #28a745;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 2rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right calc(0.375em + 0.5rem) center;
+  background-size: calc(0.75em + 1rem) calc(0.75em + 1rem);
 }
 
 .was-validated .form-control:valid:focus,
@@ -2630,15 +2630,15 @@ textarea.form-control {
 
 .was-validated textarea.form-control:valid,
 textarea.form-control.is-valid {
-  padding-right: calc(1.5em + 0.75rem);
-  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+  padding-right: calc(1.5em + 2rem);
+  background-position: top calc(0.375em + 0.5rem) right calc(0.375em + 0.5rem);
 }
 
 .was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
-  padding-right: calc(0.75em + 2.3125rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  padding-right: calc(0.75em + 4rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.5rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 2.5rem/calc(0.75em + 1rem) calc(0.75em + 1rem);
 }
 
 .was-validated .custom-select:valid:focus,
@@ -2730,11 +2730,11 @@ textarea.form-control.is-valid {
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
   border-color: #E76F51;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 2rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23E76F51' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23E76F51' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right calc(0.375em + 0.5rem) center;
+  background-size: calc(0.75em + 1rem) calc(0.75em + 1rem);
 }
 
 .was-validated .form-control:invalid:focus,
@@ -2745,15 +2745,15 @@ textarea.form-control.is-valid {
 
 .was-validated textarea.form-control:invalid,
 textarea.form-control.is-invalid {
-  padding-right: calc(1.5em + 0.75rem);
-  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+  padding-right: calc(1.5em + 2rem);
+  background-position: top calc(0.375em + 0.5rem) right calc(0.375em + 0.5rem);
 }
 
 .was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #E76F51;
-  padding-right: calc(0.75em + 2.3125rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23E76F51' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23E76F51' stroke='none'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  padding-right: calc(0.75em + 4rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.5rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23E76F51' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23E76F51' stroke='none'/%3e%3c/svg%3e") #fff no-repeat center right 2.5rem/calc(0.75em + 1rem) calc(0.75em + 1rem);
 }
 
 .was-validated .custom-select:invalid:focus,
@@ -4052,7 +4052,7 @@ input[type=button].btn-block {
 .input-group > .custom-file + .form-control,
 .input-group > .custom-file + .custom-select,
 .input-group > .custom-file + .custom-file {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .input-group > .form-control:focus,
@@ -4117,21 +4117,21 @@ input[type=button].btn-block {
 .input-group-append .btn + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .input-group-prepend {
-  margin-right: -1px;
+  margin-right: -2px;
 }
 
 .input-group-append {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.375rem 0.75rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -4140,8 +4140,8 @@ input[type=button].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
 }
 
 .input-group-text input[type=radio],
@@ -4151,7 +4151,7 @@ input[type=button].btn-block {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.5em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
 }
 
 .input-group-lg > .form-control,
@@ -4168,7 +4168,7 @@ input[type=button].btn-block {
 
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
 }
 
 .input-group-sm > .form-control,
@@ -4185,7 +4185,7 @@ input[type=button].btn-block {
 
 .input-group-lg > .custom-select,
 .input-group-sm > .custom-select {
-  padding-right: 1.75rem;
+  padding-right: 2.5rem;
 }
 
 .input-group > .input-group-prepend > .btn,
@@ -4278,7 +4278,7 @@ input[type=button].btn-block {
   pointer-events: none;
   content: "";
   background-color: #fff;
-  border: #adb5bd solid 1px;
+  border: #adb5bd solid 2px;
 }
 
 .custom-control-label::after {
@@ -4341,10 +4341,10 @@ input[type=button].btn-block {
 }
 
 .custom-switch .custom-control-label::after {
-  top: calc(0.25rem + 2px);
-  left: calc(-2.25rem + 2px);
-  width: calc(1rem - 4px);
-  height: calc(1rem - 4px);
+  top: calc(0.25rem + 4px);
+  left: calc(-2.25rem + 4px);
+  width: calc(1rem - 8px);
+  height: calc(1rem - 8px);
   background-color: #adb5bd;
   border-radius: 0.5rem;
   transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4368,15 +4368,15 @@ input[type=button].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  height: calc(1.5em + 2rem + 4px);
+  padding: 1rem 2.5rem 1rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   vertical-align: middle;
-  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-  border: 1px solid #ced4da;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.5rem center/8px 10px;
+  border: 2px solid #ddd;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4397,7 +4397,7 @@ input[type=button].btn-block {
 .custom-select[multiple],
 .custom-select[size]:not([size="1"]) {
   height: auto;
-  padding-right: 0.75rem;
+  padding-right: 1.5rem;
   background-image: none;
 }
 
@@ -4416,7 +4416,7 @@ input[type=button].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -4424,7 +4424,7 @@ input[type=button].btn-block {
 }
 
 .custom-select-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -4435,7 +4435,7 @@ input[type=button].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: calc(1.5em + 2rem + 4px);
   margin-bottom: 0;
 }
 
@@ -4443,7 +4443,7 @@ input[type=button].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: calc(1.5em + 2rem + 4px);
   margin: 0;
   opacity: 0;
 }
@@ -4472,14 +4472,14 @@ input[type=button].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 2rem + 4px);
+  padding: 1rem 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
 }
 
 .custom-file-label::after {
@@ -4489,14 +4489,14 @@ input[type=button].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: calc(1.5em + 0.75rem);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 2rem);
+  padding: 1rem 1.5rem;
   line-height: 1.5;
   color: #495057;
   content: "Browse";
   background-color: #e9ecef;
   border-left: inherit;
-  border-radius: 0 0.25rem 0.25rem 0;
+  border-radius: 0 10px 10px 0;
 }
 
 .custom-range {
@@ -12230,6 +12230,32 @@ button:active {
   outline: none;
 }
 
+.link {
+  color: #5C5CC3;
+  position: relative;
+  text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0;
+  background-color: #F4F4FE;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
 .wrapper {
   flex-grow: 1;
 }
@@ -12409,6 +12435,11 @@ button:active {
 
   .book-mockup {
     height: 400px;
+  }
+
+  .btn-download {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -12624,9 +12655,31 @@ button:active {
   color: #fff;
 }
 
+.btn-cta {
+  background-color: #fff;
+  color: #E76F51;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-cta:hover,
+.btn-cta:focus,
+.btn-cta:active {
+  background-color: #fff;
+  color: #e45c3b;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
 @media (min-width: 768px) {
   .cta-title {
     font-size: 1.75rem;
+  }
+
+  .btn-cta {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -12823,6 +12876,51 @@ button:active {
 }
 
 /* Contact */
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form .form-control {
+  font-size: 1.125rem;
+}
+
+.contact-text {
+  font-size: 1.125rem;
+}
+
+.btn-contact {
+  border: none;
+  background-color: #F4F4FE;
+  color: #5C5CC3;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active {
+  background-color: #5C5CC3;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    margin-top: 40px;
+  }
+
+  .contact-form .form-control {
+    font-size: 1.25rem;
+  }
+
+  .btn-contact {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
 
 
 /*# sourceMappingURL=app.css.map*/

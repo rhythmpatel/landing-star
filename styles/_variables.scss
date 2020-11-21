@@ -10,6 +10,8 @@ $red:           #E76F51;
 $black:         #000;
 $white:         #fff;
 
+$border:        #ddd;
+
 $shadow:        0 3px 8px rgba($black,.1);
 $shadow-hover:  0 10px 25px rgba($black,.2);
 
@@ -67,6 +69,13 @@ $btn-padding-x-lg:      2rem !default;
 $btn-font-size-lg:      1.25rem;
 $btn-border-radius-lg:  2.5rem;
 //$input-btn-line-height-lg:    $line-height-lg !default;
+
+$form-group-margin-bottom:  30px;
+$input-border-width:        2px;
+$input-border-color:        $border;
+$input-border-radius:       10px;
+$input-padding-y:           1rem;
+$input-padding-x:           1.5rem;
 
 $card-border-radius:    1.25rem;
 $card-cap-bg:           transparent;

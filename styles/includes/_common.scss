@@ -31,6 +31,32 @@ a, button {
   }
 }
 
+.link {
+  color: $primary;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    background-color: $primary-bg;
+    transition: width .3s;
+    z-index: -1;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 .wrapper {
   flex-grow: 1;
 }

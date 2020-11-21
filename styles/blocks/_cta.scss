@@ -9,11 +9,30 @@
   color: $white;
 }
 
+.btn-cta {
+  background-color: $white;
+  color: $red;
+  font-weight: bold;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+
+  @include hover-focus-active {
+    background-color: $white;
+    color: darken($red, 5%);
+    box-shadow: $shadow-hover;
+  }
+}
+
 
 @include media-breakpoint-up(md) {
 
   .cta-title {
     font-size: 1.75rem;
+  }
+
+  .btn-cta {
+    @include hpad(70);
   }
 
 }

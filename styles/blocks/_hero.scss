@@ -75,6 +75,10 @@
     height: 400px;
   }
 
+  .btn-download {
+    @include hpad(50);
+  }
+
 }
 
 
