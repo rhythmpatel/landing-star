@@ -5,3 +5,23 @@
   font-weight: bold;
   color: $primary;
 }
+
+.navbar-expand-lg .navbar-nav {
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include hpad(12);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .navbar-expand-lg .navbar-nav {
+    .nav-link {
+      font-size: 1.125rem;
+      @include hpad(20);
+    }
+  }
+
+}

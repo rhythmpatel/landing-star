@@ -24,6 +24,46 @@
   }
 }
 
+.author-social {
+  display: flex;
+  margin-top: 30px;
+
+  a {
+    background-color: $white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    box-shadow: $shadow;
+    transition: color .3s, box-shadow .3s;
+
+    + a {
+      margin-left: 15px;
+    }
+
+    @include hover-focus {
+      box-shadow: $shadow-hover;
+      text-decoration: none;
+    }
+
+  }
+
+  [class^="icon-"] {
+    font-size: 75%;
+    line-height: 40px;
+
+    @each $color, $value in $social-colors {
+      &.brand-#{$color} {
+        color: $value;
+
+        @include hover-focus {
+          color: $value;
+        }
+      }
+    }
+  }
+}
+
 
 @include media-breakpoint-up(md) {
 
@@ -47,6 +87,24 @@
   .author-img {
     width: 200px;
     height: 200px;
+  }
+
+  .author-social {
+    margin-top: 40px;
+
+    a {
+      width: 60px;
+      height: 60px;
+
+      + a {
+        margin-left: 20px;
+      }
+    }
+
+    [class^="icon-"] {
+      font-size: 100%;
+      line-height: 60px;
+    }
   }
 
 }

@@ -10,6 +10,8 @@
 
 /* Slick override */
 
+/* Icon fonts */
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -12192,6 +12194,22 @@ a.text-dark:focus {
   color: #5C5CC3;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.125rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* Common */
 
 html {
@@ -12354,6 +12372,58 @@ button:active {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+}
+
+@font-face {
+  font-family: "landing-star";
+  src: url("/fonts/landing-star.eot?l7ujlj");
+  src: url("/fonts/landing-star.eot?l7ujlj#iefix") format("embedded-opentype"), url("/fonts/landing-star.ttf?l7ujlj") format("truetype"), url("/fonts/landing-star.woff?l7ujlj") format("woff"), url("/fonts/landing-star.svg?l7ujlj#landing-star") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "landing-star" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-down:before {
+  content: "\E900";
+}
+
+.icon-facebook:before {
+  content: "\E901";
+}
+
+.icon-github:before {
+  content: "\E902";
+}
+
+.icon-instagram:before {
+  content: "\E903";
+}
+
+.icon-twitter:before {
+  content: "\E904";
+}
+
+.icon-website:before {
+  content: "\E905";
+}
+
+.icon-youtube:before {
+  content: "\E906";
 }
 
 /* Hero */
@@ -12806,6 +12876,99 @@ button:active {
   margin-bottom: 0;
 }
 
+.author-social {
+  display: flex;
+  margin-top: 30px;
+}
+
+.author-social a {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+.author-social a + a {
+  margin-left: 15px;
+}
+
+.author-social a:hover,
+.author-social a:focus {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.author-social [class^=icon-] {
+  font-size: 75%;
+  line-height: 40px;
+}
+
+.author-social [class^=icon-].brand-facebook {
+  color: #3b5998;
+}
+
+.author-social [class^=icon-].brand-facebook:hover,
+.author-social [class^=icon-].brand-facebook:focus {
+  color: #3b5998;
+}
+
+.author-social [class^=icon-].brand-twitter {
+  color: #1da1f2;
+}
+
+.author-social [class^=icon-].brand-twitter:hover,
+.author-social [class^=icon-].brand-twitter:focus {
+  color: #1da1f2;
+}
+
+.author-social [class^=icon-].brand-instagram {
+  color: #E1306C;
+}
+
+.author-social [class^=icon-].brand-instagram:hover,
+.author-social [class^=icon-].brand-instagram:focus {
+  color: #E1306C;
+}
+
+.author-social [class^=icon-].brand-website {
+  color: #5C5CC3;
+}
+
+.author-social [class^=icon-].brand-website:hover,
+.author-social [class^=icon-].brand-website:focus {
+  color: #5C5CC3;
+}
+
+.author-social [class^=icon-].brand-github {
+  color: #6E5494;
+}
+
+.author-social [class^=icon-].brand-github:hover,
+.author-social [class^=icon-].brand-github:focus {
+  color: #6E5494;
+}
+
+.author-social [class^=icon-].brand-linkedin {
+  color: #006097;
+}
+
+.author-social [class^=icon-].brand-linkedin:hover,
+.author-social [class^=icon-].brand-linkedin:focus {
+  color: #006097;
+}
+
+.author-social [class^=icon-].brand-pinterest {
+  color: #bd081c;
+}
+
+.author-social [class^=icon-].brand-pinterest:hover,
+.author-social [class^=icon-].brand-pinterest:focus {
+  color: #bd081c;
+}
+
 @media (min-width: 768px) {
   .author-img {
     width: 150px;
@@ -12825,6 +12988,24 @@ button:active {
     width: 200px;
     height: 200px;
   }
+
+  .author-social {
+    margin-top: 40px;
+  }
+
+  .author-social a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .author-social a + a {
+    margin-left: 20px;
+  }
+
+  .author-social [class^=icon-] {
+    font-size: 100%;
+    line-height: 60px;
+  }
 }
 
 /* FAQs */
@@ -12841,10 +13022,31 @@ button:active {
   border-bottom: none;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq .card-header::before {
+  content: "\E900";
+  font: normal 12px/1 "landing-star";
+  text-transform: none;
+  color: #5C5CC3;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
 }
 
 .faq .card-header:not(.collapsed) .faq-question {
   color: #5C5CC3;
+}
+
+.faq .card-header.collapsed::before {
+  transform: rotate(0deg);
 }
 
 .faq-question {
@@ -12872,6 +13074,17 @@ button:active {
   .faq .card-header {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .faq .card-header::before {
+    top: 26px;
+  }
+
+  .faq .faq-answer {
+    padding-right: 70px;
+    padding-left: 30px;
   }
 }
 

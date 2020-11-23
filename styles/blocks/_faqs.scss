@@ -12,10 +12,35 @@
   .card-header {
     border-bottom: none;
     @include vpad(15);
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: $icon-chevron-down;
+      font: normal 12px/1 '#{$icomoon-font-family}';
+      text-transform: none;
+      color: $primary;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      position: absolute;
+      right: 30px;
+      top: 16px;
+      transform: rotate(180deg);
+      transition: transform .3s;
+    }
 
     &:not(.collapsed) {
       .faq-question {
         color: $primary;
+      }
+    }
+
+    &.collapsed {
+      &::before {
+        transform: rotate(0deg);
       }
     }
   }
@@ -48,6 +73,16 @@
 
     .card-header {
       @include vpad(20);
+      @include hpad(30);
+
+      &::before {
+        top: 26px;
+      }
+    }
+
+    .faq-answer {
+      padding-right: 70px;
+      padding-left: 30px;
     }
   }
 
