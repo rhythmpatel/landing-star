@@ -4,6 +4,11 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: $primary;
+
+  img {
+    height: 26px;
+    margin-right: 4px;
+  }
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -19,12 +24,20 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+
+@include media-breakpoint-up(xl) {
 
   .navbar-expand-lg .navbar-nav {
     .nav-link {
       font-size: 1.125rem;
       @include hpad(20);
+    }
+  }
+
+  .navbar-brand {
+    img {
+      height: 40px;
+      margin-right: 10px;
     }
   }
 

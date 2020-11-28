@@ -9393,6 +9393,11 @@ a.text-dark:focus {
   color: #5C5CC3;
 }
 
+.navbar-brand img {
+  height: 26px;
+  margin-right: 4px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 1rem;
   font-weight: 500;
@@ -9405,11 +9410,16 @@ a.text-dark:focus {
   color: #5C5CC3;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 1.125rem;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
   }
 }
 
@@ -9733,7 +9743,7 @@ button:active {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
-    margin-top: 86px;
+    margin-top: 90px;
     transition: margin-top 0.3s;
   }
 
@@ -9748,7 +9758,7 @@ button:active {
   }
 
   .hero .navbar-shrink + .hero {
-    margin-top: 53px;
+    margin-top: 60px;
   }
 
   .hero-title {

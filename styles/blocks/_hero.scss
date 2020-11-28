@@ -88,7 +88,7 @@
   .hero {
     @include vpad(100);
     position: relative;
-    margin-top: 86px;
+    margin-top: 90px;
     transition: margin-top .3s;
 
     &::after {
@@ -102,7 +102,7 @@
     }
 
     .navbar-shrink + .hero {
-      margin-top: 53px;
+      margin-top: 60px;
     }
   }
 
