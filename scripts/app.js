@@ -1,6 +1,8 @@
 try {
     window.$ = window.jQuery = require('jquery');
-    require('bootstrap');
+    require('bootstrap/js/src/util');
+    require('bootstrap/js/src/button');
+    require('bootstrap/js/src/collapse');
     require('slick-carousel');
 } catch (e) {}
 
