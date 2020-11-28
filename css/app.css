@@ -9401,6 +9401,10 @@ a.text-dark:focus {
   padding-right: 12px;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: #5C5CC3;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 1.125rem;
@@ -9545,10 +9549,21 @@ button:active {
   .top-nav {
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: padding 0.3s;
   }
 
   .top-nav .navbar-brand {
     font-size: 1.5rem;
+    transition: font 0.3s;
+  }
+
+  .top-nav.navbar-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .top-nav.navbar-shrink .navbar-brand {
+    font-size: 1.25rem;
   }
 }
 
@@ -9631,6 +9646,7 @@ button:active {
   background-color: #8F8FF0;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 60px;
 }
 
 .hero-content {
@@ -9717,6 +9733,8 @@ button:active {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
+    margin-top: 86px;
+    transition: margin-top 0.3s;
   }
 
   .hero::after {
@@ -9727,6 +9745,10 @@ button:active {
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  .hero .navbar-shrink + .hero {
+    margin-top: 53px;
   }
 
   .hero-title {

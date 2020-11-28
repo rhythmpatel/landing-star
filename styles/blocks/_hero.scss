@@ -3,6 +3,7 @@
 .hero {
   background-color: $hero-bg;
   @include vpad(30);
+  margin-top: 60px;
 }
 
 .hero-content {
@@ -87,6 +88,8 @@
   .hero {
     @include vpad(100);
     position: relative;
+    margin-top: 86px;
+    transition: margin-top .3s;
 
     &::after {
       content: "";
@@ -96,6 +99,10 @@
       left: 0;
       right: 0;
       bottom: 0;
+    }
+
+    .navbar-shrink + .hero {
+      margin-top: 53px;
     }
   }
 

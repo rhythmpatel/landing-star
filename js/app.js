@@ -16,12 +16,41 @@ try {
 
   __webpack_require__(/*! bootstrap/js/src/collapse */ "./node_modules/bootstrap/js/src/collapse.js");
 
-  __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
-} catch (e) {} // DOM ready
+  __webpack_require__(/*! bootstrap/js/src/scrollspy */ "./node_modules/bootstrap/js/src/scrollspy.js");
 
+  __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+} catch (e) {} // Collapse Navbar
+
+
+var navbarCollapse = function navbarCollapse() {
+  var $mainNav = $("#mainNav");
+
+  if ($mainNav.offset().top > 150) {
+    $mainNav.addClass("navbar-shrink");
+  } else {
+    $mainNav.removeClass("navbar-shrink");
+  }
+}; // Collapse the navbar when page is scrolled
+
+
+$(window).scroll(navbarCollapse); // DOM ready
 
 $(function () {
-  // view all chapters
+  // smooth scroll
+  $('#topNav a').on('click', function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $target = $(target); // console.log(target);
+    // target = $(target).length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+    if ($target.length) {
+      $('html, body').animate({
+        scrollTop: $target.offset().top - 40
+      }, 1000);
+      return false;
+    }
+  }); // view all chapters
+
   $('.view-chapters').on('click', function (e) {
     e.preventDefault();
     $('.chapters').addClass('expand');

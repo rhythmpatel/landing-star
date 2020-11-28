@@ -14,9 +14,25 @@
 
   .top-nav {
     @include vpad(20);
+    transition: padding .3s;
 
     .navbar-brand {
       font-size: 1.5rem;
+      transition: font .3s;
+    }
+
+    &.navbar-shrink {
+      @include vpad(5);
+
+      .navbar-brand {
+        font-size: 1.25rem;
+      }
+
+      .navbar-nav {
+        .nav-link {
+          //font-size: 1rem;
+        }
+      }
     }
   }
 
