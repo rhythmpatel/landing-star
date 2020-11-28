@@ -380,21 +380,23 @@
                     <p class="contact-text text-center">Please submit your information and we will get back to you.<br>
                         Or email us on <a href="mailto:john@company.com" class="link">john@company.com</a></p>
 
-                    <div class="contact-form row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Name" name="fullname">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Email Address" name="email">
-                        </div>
-                        <div class="form-group col-12">
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
-                        </div>
+                    <form name="contact" method="post">
+                        <div class="contact-form row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Name" name="fullname">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Email Address" name="email">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+                            </div>
 
-                        <div class="col text-center mt-3 mt-md-4">
-                            <button class="btn btn-lg btn-light btn-contact">Submit</button>
+                            <div class="col text-center mt-3 mt-md-4">
+                                <button class="btn btn-lg btn-light btn-contact">Submit</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
 
                 </div>
             </div>
